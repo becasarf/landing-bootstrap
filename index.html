@@ -5,39 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>Coffeca </title>
-    <style>
-      .botao1 {
-            background-color: #6f4e37;
-            border-color: #573516;
-            color: white;
-        }
-        .botao1:hover {
-            background-color: #3f260f;
-            border-color: #5e3a19;
-       }
-         .botao1:active {
-            background-color: #3f260f;
-            border-color: #5e3a19;
-           
-        }
-     .botao2 {
-            background-color: #804e20;
-            border-color: #804e20;
-            color: white;
-        }
-     .botao2:hover {
-            background-color: #3f260f;
-            border-color: #5e3a19;
-        } 
-      .botao2:active {
-            background-color: #3f260f;
-            border-color: #5e3a19;
-        }
-       
-        body{
-          font-family: Arial, sans-serif;
-        }
-        </style>
+     <style>
+  .btn-cafe {
+    --bs-btn-color: white;
+    --bs-btn-bg: #6f4e37;
+    --bs-btn-border-color: #573516;
+    --bs-btn-hover-bg: #3f260f;
+    --bs-btn-hover-border-color: #5e3a19;
+    --bs-btn-active-bg: #3f260f;
+    --bs-btn-active-border-color: #5e3a19;
+    --bs-btn-focus-shadow-rgb: 111, 78, 55;
+  }
+
+      body {
+    font-family: Arial, sans-serif;
+   }
+  </style> 
        
 </head>
 <body>
@@ -69,7 +52,7 @@
       </ul>
       <form class="d-flex" role="search">
        <input class="form-control me-2" type="search" placeholder="Buscar no cardápio" aria-label="Buscar">
-       <button class="btn btn-outline-success botao1" type="submit">Buscar</button>
+       <button class="btn btn-outline-success btn-cafe" type="submit">Buscar</button>
      </form>
     </div>
   </div>
@@ -78,23 +61,41 @@
   <div class="container">
     <h1 class="display-4">Bem-vindo à Coffeca</h1>
     <p class="lead">Café fresco, torrado artesanalmente, todos os dias.</p>
-    <a href="#" class="btn btn-primary btn-lg botao2">Ver cardápio</a>
+    <a href="#" class="btn btn-primary btn-lg btn-cafe">Ver cardápio</a>
   </div>
 </div>  
-<!-- Usei a classe col-md-4 para que os 3 blocos fiquem lado a lado a partir do breakpoint md (768px, aproximadamente o tamanho de um tablet). -->
-    <div class="container py-5">
+<div class="container py-5">
+  <!-- Usei a classe col-md-4 para que os 3 blocos fiquem lado a lado a partir do breakpoint md (768px, aproximadamente o tamanho de um tablet). Abaixo disso, cada bloco ocupa 100% da largura e empilha automaticamente. -->
   <div class="row text-center">
     <div class="col-md-4">
-      <h3>Espresso</h3>
-      <p>Café puro e encorpado, torrado na hora.</p>
+      <div class="card h-100">
+        <img src="https://i.pinimg.com/736x/6f/0e/0a/6f0e0a0929b0e3f0af81c9b01e175f6b.jpg" class="card-img-top" alt="Espresso">
+        <div class="card-body">
+          <h5 class="card-title">Espresso</h5>
+          <p class="card-text">Café puro e encorpado, torrado na hora.</p>
+          <a href="#" class="btn btn-primary btn-cafe">Adicionar ao carrinho</a>
+        </div>
+      </div>
     </div>
     <div class="col-md-4">
-      <h3>Cappuccino</h3>
-      <p>Espresso com leite vaporizado e espuma cremosa.</p>
+      <div class="card h-100">
+        <img src="https://i.pinimg.com/736x/4d/e4/0c/4de40c8bbd7ca5c9a76587faf386d444.jpg" class="card-img-top" alt="Cappuccino">
+        <div class="card-body">
+          <h5 class="card-title">Cappuccino</h5>
+          <p class="card-text">Espresso com leite vaporizado e espuma cremosa.</p>
+          <a href="#" class="btn btn-primary btn-cafe">Adicionar ao carrinho</a>
+        </div>
+      </div>
     </div>
     <div class="col-md-4">
-      <h3>Café Latte</h3>
-      <p>Um café cremoso e saboroso, feito com espresso e leite vaporizado.</p>
+      <div class="card h-100">
+        <img src="https://i.pinimg.com/1200x/81/92/7e/81927ee1cf8fcd7715530b0856cf553d.jpg" class="card-img-top" alt="Cafe Latte">
+        <div class="card-body">
+          <h5 class="card-title">Cafe Latte</h5>
+          <p class="card-text">Um café cremoso e saboroso, feito com espresso e leite vaporizado.</p>
+          <a href="#" class="btn btn-primary btn-cafe">Adicionar ao carrinho</a>
+        </div>
+      </div>
     </div>
   </div>
 </div>
