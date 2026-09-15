@@ -5,6 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>Coffeca </title>
+    <style>
+      .botao1 {
+            background-color: #6f4e37;
+            border-color: #573516;
+            color: white;
+        }
+        .botao1:hover {
+            background-color: #3f260f;
+            border-color: #5e3a19;
+       }
+         .botao1:active {
+            background-color: #3f260f;
+            border-color: #5e3a19;
+           
+        }
+     .botao2 {
+            background-color: #804e20;
+            border-color: #804e20;
+            color: white;
+        }
+     .botao2:hover {
+            background-color: #3f260f;
+            border-color: #5e3a19;
+        } 
+      .botao2:active {
+            background-color: #3f260f;
+            border-color: #5e3a19;
+        }
+       
+        body{
+          font-family: Arial, sans-serif;
+        }
+        </style>
+       
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -35,11 +70,18 @@
       </ul>
       <form class="d-flex" role="search">
        <input class="form-control me-2" type="search" placeholder="Buscar no cardápio" aria-label="Buscar">
-       <button class="btn btn-outline-success" type="submit">Buscar</button>
+       <button class="btn btn-outline-success botao1" type="submit">Buscar</button>
      </form>
     </div>
   </div>
 </nav>
+       <div class="container-fluid text-center py-5" style="background-color: #f5efe6;">
+  <div class="container">
+    <h1 class="display-4">Bem-vindo à Coffeca</h1>
+    <p class="lead">Café fresco, torrado artesanalmente, todos os dias.</p>
+    <a href="#" class="btn btn-primary btn-lg botao2">Ver cardápio</a>
+  </div>
+</div>  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
